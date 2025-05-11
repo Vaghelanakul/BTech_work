@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=parseInt(prompt("enter number"));
+        let nString=n.toString()
+
+        let firstDigit=parseInt(nString[0])
+        let secondDigit=parseInt(nString[1])
+        let sum=1;
+        for(let i=0;i<secondDigit;i++){
+            sum*=firstDigit
+        }
+        document.write(sum)
+    </script>
+</body>
+</html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #message {
+            display: none;
+            color: blue;
+            font-size: 1.2em;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Toggle Example</h1>
+    <p id="message">Hello! You toggled me on!</p>
+    <button id="toggleButton">Toggle Message</button>
+
+    <script>
+        // jQuery code
+        $(document).ready(function() {
+            $('#toggleButton').click(function() {
+                $('#message').toggle();
+            });
+        });
+    </script>
+</body>
+</html>

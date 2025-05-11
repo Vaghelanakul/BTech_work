@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=parseInt(prompt("enter number "))
+        let rem,sum=0,count=0;
+        let temp=n;
+        while(temp>0){
+            temp=parseInt(temp/10);
+            count++;
+        }
+        temp=n;
+        while(temp>0){
+            rem=temp%10;
+            let p=1;
+            for(let i=0;i<count;i++){
+                p*=rem;
+            }
+            sum+=p;
+            temp=parseInt(temp/10);
+        }
+        if(sum==n){
+            document.write("armstrong")
+        }
+        else{
+            document.write("not armstrong")
+        }
+
+    </script>
+    
+</body>
+</html> -->
+
+<!-- <html>
+  <body>
+    <input type="text" name="uname">
+    <input type="text" name="pword">
+    <script>
+        
+          let a = document.getElementsByTagName("input");
+          alert(a[0].value);
+          alert(a[1].value);
+        
+      </script>
+      
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getElementById Example</title>
+</head>
+<body>
+  <h1 id="heading">Hello, World!</h1>
+  <button onclick="changeText()">Click Me</button>
+
+  <script>
+    function changeText() {
+      // Access the element with the ID 'heading'
+     // var headingElement = document.getElementById("heading");
+      // Change its content
+     // headingElement.innerHTML = "You clicked the button!";
+     alert("hello")
+    }
+  </script>
+</body>
+</html>
+

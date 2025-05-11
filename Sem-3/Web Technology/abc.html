@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getElementById Example</title>
+</head>
+<body>
+  <h1 id="heading">Hello, World!</h1>
+  <button onclick="changeText()">Click Me</button>
+
+  <script>
+    function changeText() {
+      // Access the element with the ID 'heading'
+      var headingElement = document.getElementById("heading");
+      // Change its content
+        headingElement.innerHTML = "You clicked the button!";
+     
+    }
+  </script>
+</body>
+</html>
+

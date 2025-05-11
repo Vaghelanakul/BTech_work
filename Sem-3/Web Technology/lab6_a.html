@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Effects</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            animation: colorChange 4s linear infinite, moveBox 8s infinite ;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+        }
+        @keyframes colorChange {
+            0% { 
+                background-color: red; 
+            }
+            100% { 
+                background-color: yellow; 
+            }
+        }
+        @keyframes moveBox {
+            0% { 
+                top: 0; 
+                left: 0; 
+            }
+            25% { 
+                top: 0; 
+                left: calc(100vw - 100px); 
+            }
+            50% { 
+                top: calc(100vh - 100px); 
+                left: calc(100vw - 100px); 
+            }
+            75% { 
+                top: calc(100vh - 100px); 
+                left: 0; 
+            }
+            100% { 
+                top: 0; 
+                left: 0; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>

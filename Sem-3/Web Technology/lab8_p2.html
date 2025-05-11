@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n1 = parseInt(prompt("enter 1st number"));
+        let n2 = parseInt(prompt("enter 2nd number"));
+        function isPrime(num) {
+            let i=0;
+            let count=0;
+            for(let i=1;<=;i++){
+                if(num%i==0){
+                    count++;
+                }
+                if(count==2){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+        }
+        for (let i = n1; i < n2; i++) {
+            if(isPrime(i)){
+                document.write(i);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[href]{
+            color: yellow;
+        }
+        a[href~="google"]{
+            color: green;
+        }
+        a[href^="link"]{
+            color: rgb(29, 29, 31);
+        }
+        div[class|="abc"]{
+            color: red;
+        }
+        a[href$="ac.in"]{
+            color: blueviolet;
+            font-style: italic;
+            font-weight: 400;
+        }
+        div[class*="bcd"]{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>attribute selector example</h1>
+    <a href="#">Click Here</a><br>
+    <a href="www- google -com">Click Here</a><br>
+    <a href="https.darshan.ac.in">Click Here</a><br>
+    <a href="link.abc">Click Here</a><br>
+    <br>
+    <div class="abc-bcd-add">
+        this is exmaple of pipe attribute
+    </div>
+</body>
+</html>

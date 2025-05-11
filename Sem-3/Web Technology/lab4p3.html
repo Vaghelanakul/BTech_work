@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            
+            border: 8px inset rgb(27, 201, 245);
+            border-radius: 5px;
+            width: 50%;
+        }
+        table{
+            width: 100%;
+            
+        }
+        tr{
+            width: 100%;
+        }
+        td{
+            width: 50%;
+        }
+        .heading{
+            background-color: rgb(189, 189, 184);
+            font-size: larger;
+            border-bottom: 1px solid;
+        }
+        .input{
+            width: 100%;
+            height: 25px;
+        }
+        label{
+            color:aqua;
+        }
+        #income{
+            width: 85%;
+            height: 10px;
+            background-color: gray;
+        }
+        .inputbio{
+            width: 100%;
+        }
+        .footer{
+            background-color: rgb(201, 201, 197);
+            border-top: 1px solid black;
+            text-align: right;
+        }
+        .footer button{
+            margin-right: 20px;
+            background-color: aqua;
+            border-radius: 4px;
+            border: none;
+            font-size: 20px;
+        }
+
+    
+        
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <table cellpadding="10px">
+                    <tr>
+                        <td colspan="2" class="heading" align="center">Create Account</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fname">First Name*</label><br>
+                            <input class="input" type="text" name="fname" placeholder="enter your first name">
+                        </td>
+                        <td>
+                            <label for="lname">Last Name</label><br>
+                            <input class="input" type="text" name="lname" placeholder="enter your last name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="email">Email*</label><br>
+                            <input class="input" type="email" name="email" placeholder="enter email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="psw">Password*</label><br>
+                            <input class="input" type="password" name="psw" placeholder="enter your password">
+                        </td>
+                        <td>
+                            <label for="cpsw">Confirm Password</label><br>
+                            <input class="input" type="password" name="cpsw" placeholder="enter your confirm password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">Gender:</label><br>
+                            <input type="radio" name="gender" id="">Male
+                            <input type="radio" name="gender" id="">Female
+                        </td>
+                        <td>
+                            <label for="hobbies">Hobbies:</label><br>
+                            <input type="checkbox" name="music">Music
+                            <input type="checkbox" name="music">Sport
+                            <input type="checkbox" name="music">Travel
+                            <input type="checkbox" name="music">Movie
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sourceofincome">Source of Income</label><br>
+                            <select class="input"name="sourceofincome">
+                                <option value="employed">Employed</option>
+                                <option value="freelancer">Freelancer</option>
+                                <option value="student">Student</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="income">Income</label><br>
+                            <input type="range" name="income" id="income" min="0" max="100"><span id="displayincome"></span>
+                            <script>
+                                var range=document.getElementById("income");
+                                var output=document.getElementById("displayincome");
+                                output.innerHTML=range.value+"K";
+
+                                range.oninput=function(){
+                                    output.innerHTML=range.value+"K";
+                                }
+
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="file">Upload Profile Picture</label><br>
+                            <input type="file" name="profilePicture" id="">
+                        </td>
+                        <td>
+                            <label for="age">age</label><br>
+                            <input type="text" name="age" class="input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="bio">Bio</label><br>
+                            <textarea  name="bio" id="" rows="5" class="inputbio"></textarea>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td colspan="2" class="footer">
+                            <button type="submit" >Create</button>
+                        </td>
+                    </tr>
+
+            </table>
+        </form>
+
+    </div>
+</body>
+</html>
