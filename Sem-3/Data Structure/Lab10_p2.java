@@ -63,22 +63,5 @@ public class Lab10_p2 {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        Lab10_p2 obj1=new Lab10_p2();
-        while (true) {
-            System.out.println("1.Insert at first\n2.\n3.Exit");
-            int c = sc.nextInt();
-            switch (c) {
-                case 1:
-                    System.out.println("Enter data");
-                    int data = sc.nextInt();
-                    obj1.insertAtFirst(data);
-                    break;
-                case 2:
-                    System.out.println("entered nodes data is");
-                    obj1.display();
-                case 3:
-                    System.exit(c);
-            }
-        }
     }
 }
