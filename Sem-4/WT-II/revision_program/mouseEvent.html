@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">Click me</button>
+    <label id="lbl1"></label>
+    <script>
+        let btn = document.getElementById("btn1");
+        let lbl = document.getElementById("lbl1");
+        btn.addEventListener("mousedown", (e) => {
+            switch (e.button) {
+                case 0:
+                    lbl.innerHTML = "left click";
+                    break;
+                case 1:
+                    lbl.innerHTML = "middle click";
+                    console.log("middle")
+                    break;
+                case 2:
+                    lbl.innerHTML = "right click";
+                    console.log("right")
+                    break;
+            }
+        })
+    </script>
+
+</body>
+
+</html>
